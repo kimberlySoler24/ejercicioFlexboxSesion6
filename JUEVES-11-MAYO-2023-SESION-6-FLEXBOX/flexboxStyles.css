@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+
+    -webkit-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.pagina-contenido{
+    display: grid;
+    grid-template-areas: 'sidebar sidebar pensamiento pensamiento pensamiento'
+    'sidebar sidebar publicacion publicacion publicacion';
+    margin-top: 50px;
+    padding: 20px;
+    -webkit-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    justify-content: space-between;
+}
+
+.pagina-contenido div{
+    margin-top: 50px;
+    -webkit-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    box-shadow: 2px 14px 34px 0px rgba(255, 0, 0, 1);
+    }
+
+.navbar img {
+    width: 50px;
+}
+
+.menu-icon{
+    display: none;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.pensamiento{
+    grid-area: pensamiento;
+}
+.publicacion{
+    grid-area: publicacion;
+}
+
+.sidebar, .pensamiento, .publicacion{
+    padding: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .avatar, .menu {
+        display: none;
+    }
+   .pagina-contenido{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .invertido{
+    flex-direction: column-reverse;
+} 
+.cuadrado{
+    flex-wrap: wrap;
+} 
+}
+
+.publicacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.publicacion div{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dotted;
+    padding: 5px;
+
+}
+
+.cuadrado div{
+    display: flex;
+    align-items: flex-start;
+} 
+
+
